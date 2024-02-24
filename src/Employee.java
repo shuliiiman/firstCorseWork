@@ -18,16 +18,16 @@ public class Employee {
     }
     @Override
     public String toString() {
-        return "|ID сотрудника - ("+
-                this.id + ")|"+
-                "Ф.И.О. сотрудника - ("+
+        return "*|*ID сотрудника - *("+
+                this.id + ")*|"+
+                "*Ф.И.О. сотрудника - *("+
                 this.middleName + " "+
                 this.firstName + " "+
-                this.lastName + ")|"+
-                "Отдел № ("+
-                this.department + ")|"+
-                "Зарплата сотрудника - ("+
-                this.salary +")|";
+                this.lastName + ")*|"+
+                "*Отдел № *("+
+                this.department + ")*|"+
+                "*Зарплата сотрудника - *("+
+                this.salary +")*|*";
     }
     @Override
     public boolean equals(Object object) {
