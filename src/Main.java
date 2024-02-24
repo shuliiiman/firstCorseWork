@@ -44,48 +44,48 @@ public class Main {
     }
     private static void printSumSalary() {
         int sum = 0;
-        System.out.print("|SumSalary = (");
+        System.out.print("*|*SumSalary = *(");
         for (Employee employeeSum : employees) {
             sum += employeeSum.getSalary();
         }
-        System.out.println(sum+")|");
+        System.out.println(sum+")*|*");
     }
     private static void findMinSalary() {
         int minSalary=employees[0].getSalary();
-        System.out.print("|MinSalary = (");
+        System.out.print("*|*MinSalary = *(");
         for (Employee employeeMinSalary : employees) {
             if (employeeMinSalary.getSalary() <= minSalary) {
                 minSalary= employeeMinSalary.getSalary();
             }
         }
-        System.out.println(minSalary+")|");
+        System.out.println(minSalary+")*|*");
     }
     private static void findMaxSalary() {
 
         int maxSalary= employees[0].getSalary();
-        System.out.print("|MaxSalary = (");
+        System.out.print("*|*MaxSalary = *(");
         for (Employee employeeMaxSalary : employees) {
             if (employeeMaxSalary.getSalary() >= maxSalary) {
                 maxSalary=employeeMaxSalary.getSalary();
             }
         }
-        System.out.println(maxSalary+")|");
+        System.out.println(maxSalary+")*|*");
     }
     private static void findMidleSalary() {
         double sum=0;
-        System.out.print("|MidleSalary = (");
+        System.out.print("*|*MidleSalary = *(");
         for (Employee employeeMidleSalary : employees) {
             sum+= employeeMidleSalary.getSalary();
         }
-        System.out.println(sum/employees.length+")|");
+        System.out.println(sum/employees.length+")*|*");
     }
     private static void getAllFullName() {
-        System.out.print("|AllFullName : ");
+        System.out.print("*|*AllFullName : ");
         for (Employee employeeFullName : employees) {
             if (employeeFullName!=null) {
-                System.out.print("("+employeeFullName.getMiddleName()+" "+employeeFullName.getFirstName()+" "+employeeFullName.getLastName()+")");
+                System.out.print("*("+employeeFullName.getMiddleName()+" "+employeeFullName.getFirstName()+" "+employeeFullName.getLastName()+")*");
             }
         }
-        System.out.println("|");
+        System.out.println("|*");
     }
 }
